@@ -1,7 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .lato-regular {
     font-family: "Lato", serif;
     font-weight: 400;
     font-style: normal;
   }
+  /* shared item */
+  .flex{
+    display: flex;
+  }
+  .btn-primary{
+    background-color: chocolate;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  /* shared item */
+
+  /* navbar start*/
+  .navbar-container{
+    background-color: rgba(255, 144, 14, 0.1);
+  }
+  .navbar{
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .navbar > h2{
+   font-size: 3rem;
+  }
+  .nav-item{
+    list-style: none;
+    margin-right: 25px;
+  }
+  /* banner */
+  .banner{
+    text-align: center;
+    background-color: rgba(255, 144, 14, 0.1);
+  }
+  .banner-contain{
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  .banner-title{
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  .banner-img{
+    width: 100%;
+  }
+  /* banner */
+  /* navbar end*/
+
+  /* responsive media query */
+  /* phone start */
+  @media screen and (max-width:576px) {
+        .navbar,.nav-link{
+            flex-direction: column;
+        }
+  }
+  /* phone end */
+  /* responsive media query */
