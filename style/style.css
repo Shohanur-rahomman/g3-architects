@@ -29,6 +29,15 @@
     max-width: 1440px;
     margin: 0 auto;
   }
+  .text-style{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: grey;
+  }
+  .margin-left{
+    margin-left: 20px;
+  }
   /* shared item */
 
   /* navbar start*/
@@ -111,6 +120,59 @@
     margin-top: -100px;
   }
   /* feature love end */
+  /* facts start */
+  .facts-container{
+    margin-top: 50px;
+  }
+  .project-cart{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid sandybrown;
+    padding: 20px;
+    width: 241px;
+    height: 241px;
+    border-radius: 8px;
+  }
+  .cart-container-fact{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 50px;
+  }
+  .cart-description{
+    max-width: 50%;
+  }
+  /* facts end */
+
+  /* our responser start */
+  .sponsors-sub-container{
+    text-align: center;
+  }
+  .sponsors-container{
+    margin-top: 50px;
+  }
+  .sponsor-company{
+    display: grid;
+    gap: 155px;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 30px;
+    filter: grayscale(100%);
+  }
+  /* our responser end */
+  /* footer */
+  .footer{
+    max-width: 800px;
+    background-color: bisque;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .footer-item{
+    padding: 20px;
+    text-align: center;
+    
+  }
+  /* footer */
 
   /* responsive media query */
   /* phone start */
@@ -151,6 +213,20 @@
         }
         .feature-love-title{
           margin-left: 10px;
+        }
+        .cart-container-fact{
+          grid-template-columns: 1fr;
+          gap: 15px;
+          justify-items: center;
+        }
+        .cart-description{
+          max-width: 80%;
+          margin-left: 20px;
+        }
+        .sponsor-company{
+          grid-template-columns: repeat(1,1fr); 
+          gap: 80px;
+         justify-items: center;
         }
 
   }
@@ -194,6 +270,20 @@
       }
       .feature-love-title{
         margin-left: 10px;
+      }
+      .cart-container-fact{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        justify-items: center;
+      }
+      .cart-description{
+        max-width: 80%;
+        margin-left: 20px;
+      }
+      .sponsor-company{
+        grid-template-columns: repeat(2,1fr); 
+        gap: 80px;
+       justify-items: center;
       }
 
    
